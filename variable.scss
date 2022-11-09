@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,900&family=My+Soul&display=swap");
+$first-color: #2b1055;
+$second-color: #1c0522;
+$third-color: #7597de;
+$white-color: #ffffff;
+$main-font: "Montserrat Alternates", sans-serif;
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+@mixin display($display, $align-item, $justify-content, $direction) {
+  display: $display;
+  align-items: $align-item;
+  justify-content: $justify-content;
+  flex-direction: $direction;
+}

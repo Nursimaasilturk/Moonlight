@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,900&family=My+Soul&display=swap");
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat Alternates", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 !important;
+  min-height: 100vh;
+  background: linear-gradient(#2b1055, #7597de);
+  overflow-x: hidden;
+}
+body .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  z-index: 10000;
+}
+body .header__logo {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+body .header__contents {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+body .header__contents--items {
+  margin-left: 1.5rem;
+  list-style: none;
+}
+body .header__contents--items a {
+  padding: 0.4rem 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 1.7rem;
+}
+body .header__contents--items a:hover, body .header__contents--items a.active {
+  background-color: #ffffff;
+  color: #2b1055;
+}
+body .parallax {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  overflow: hidden;
+}
+body .parallax::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #2b1055, transparent);
+  z-index: 1000;
+}
+body .parallax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  pointer-events: none;
+}
+body .parallax img#moon {
+  mix-blend-mode: screen;
+}
+body .parallax img#mountain_front {
+  z-index: 10;
+}
+body .parallax #text {
+  position: absolute;
+  color: #ffffff;
+  white-space: nowrap;
+  font-size: 7.5vw;
+  z-index: 9;
+  right: -150px;
+}
+body .parallax #btn {
+  display: inline-block;
+  padding: 0.7rem 2.5rem;
+  border-radius: 40px;
+  background-color: #ffffff;
+  color: #2b1055;
+  font-size: 1.5rem;
+  z-index: 9;
+  text-decoration: none;
+}
+body .about {
+  position: relative;
+  padding: 100px;
+  background-color: #2b1055;
+}
+body .about h2 {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+body .about p {
+  font-size: 1em;
+  color: #ffffff;
+}
+body .contact-us {
+  width: 100%;
+  height: 100vh;
+  background-color: #2b1055;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+body .contact-us-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 70%;
+  height: 70%;
+  position: relative;
+}
+body .contact-us-modal video {
+  width: 100%;
+  height: 100%;
+}
+body .contact-us-modal__article {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+body .contact-us-modal__article--text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3rem;
+}
+body .contact-us-modal__article--text h4 {
+  font-size: 3rem;
+  color: #ffffff;
+}
+body .contact-us-modal__article--text p {
+  font-size: 1rem;
+  color: #ffffff;
+}
+body .contact-us-modal__article--form {
+  margin-right: 3rem;
+  width: 40%;
+  height: 90%;
+  float: right;
+  background: rgba(108, 0, 252, 0.22);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.1px);
+  -webkit-backdrop-filter: blur(8.1px);
+  border: 1px solid rgba(108, 0, 252, 0.3);
+}
+body .contact-us-modal__article--form form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 1rem;
+}
+body .contact-us-modal__article--form form .form-header {
+  width: 100%;
+}
+body .contact-us-modal__article--form form .form-header h5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+body .contact-us-modal__article--form form label {
+  font-size: 1.5rem;
+}
+body .contact-us-modal__article--form form input {
+  width: 90%;
+  height: 4vh;
+  outline: none;
+  padding-left: 0.5rem;
+}
+body .contact-us-modal__article--form form .form-button {
+  margin-top: 3rem;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+body .contact-us-modal__article--form form .form-button button {
+  width: 40%;
+  height: 5vh;
+  background-color: #1c0522;
+  color: #ffffff;
+  border-radius: 0.7rem;
+  border: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  cursor: pointer;
+}
+body .contact-us-modal__article--form form .form-button button:hover {
+  background-color: #ffffff;
+  border: 2px solid #1c0522;
+  color: #1c0522;
+  transition: 0.4s ease-in-out;
+}/*# sourceMappingURL=main.css.map */

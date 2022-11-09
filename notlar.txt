@@ -1,12 +1,3 @@
-a linkinin classına active yaptığımızda button gibi sabit kalıp diğerlerinde hareket ediyor.
-
-------------------------------
-header .header-contents .content-items a:hover ,
-header .header-contents .content-items a.active
-{
-	background: #fff;
-	color: #333399;
-}
 -------------------------
 paragraf ve üst kısım arasında yumuşak geçiş
 
